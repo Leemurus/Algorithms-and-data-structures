@@ -1,5 +1,5 @@
 # Algorithms-and-data-structures
-Files .h are my recent code, others (.cpp) wrote 1 year ago
+Files .h are my recent code, others (.cpp) are older
 
 #### Algorithms: 
 - Dijkstra                      O(NlogN)
