@@ -20,7 +20,7 @@ def partition(arr: list, l_index: int, r_index: int, pivot_index: int) -> int:
     for cur_right in range(l_index, r_index):
         if arr[cur_right] <= pivot:
             cur_left += 1
-            arr[cur_left], arr[cur_right] = arr[cur_right], arr[cur_left]
+            swap(arr, cur_left, cur_right)
 
     swap(arr, cur_left + 1, r_index)
     return cur_left + 1
@@ -35,7 +35,7 @@ def bubble_sort(arr: list, l_index: int, r_index: int):
                 swap(arr, index, index + 1)
 
 
-def quick_sort(arr: list, l_index: int, r_index: int, step=0):
+def quick_sort(arr: list, l_index: int, r_index: int):
     """List for sorting + range [l_index, r_index]"""
     if r_index - l_index < 10:
         bubble_sort(arr, l_index, r_index)
@@ -44,8 +44,8 @@ def quick_sort(arr: list, l_index: int, r_index: int, step=0):
     pivot_index = random.randint(l_index, r_index)
     partition_index = partition(arr, l_index, r_index, pivot_index)
 
-    quick_sort(arr, l_index, partition_index - 1, step + 1)
-    quick_sort(arr, partition_index + 1, r_index, step + 1)
+    quick_sort(arr, l_index, partition_index - 1)
+    quick_sort(arr, partition_index + 1, r_index)
 
 
 def main():
