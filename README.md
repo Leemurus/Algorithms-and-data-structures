@@ -12,12 +12,14 @@ Files .h are my recent code, others (.cpp) are older
 
 ## Data structures:
 
-| Name                      | 
-|---------------------------|
-| AVL (binary tree)         |
-| MultiMap (use hashtable)  |
-| Sparse table              |
-| Stack                     |
+| Name                     | 
+|--------------------------|
+| AVL (binary tree)        |
+| MultiMap (use hashtable) |
+| Sparse table             |
+| Stack                    |
+| Segment Tree             |
+| Fenwick Tree             |
 
 ## Sortings:
 
